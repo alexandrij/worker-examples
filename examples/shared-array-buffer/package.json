@@ -1,0 +1,12 @@
+{
+  "name": "@worker/shared-array-buffer",
+  "version": "1.0.0",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist/ && webpack -c webpack.config.js --mode development",
+    "start": "webpack-dev-server -c webpack.config.js --port 8080 --mode development --progress"
+  }
+}
